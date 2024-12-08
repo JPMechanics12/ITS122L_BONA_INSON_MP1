@@ -66,15 +66,14 @@ $totalPages = ceil($totalMovies / $moviesPerPage);
     <title>Movies</title>
     <style>
         .rating-options {
-            display: run-in; /* Default to hidden, shown when toggled */
+            display: none; /* Default to hidden, shown when toggled */
             text-align: left;
             margin-top: 10px;
-            
         }
 
         .rating-options label {
             display: block;
-            margin: 0px 0;
+            margin: 5px 0;
         }
 
         .rating-header {
