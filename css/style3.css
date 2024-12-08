@@ -1,0 +1,66 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: radial-gradient(ellipse at bottom, #1b2634 0%, #292b39 100%);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Movie Layout */
+.movie-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: 50% each */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/* Movie Image (Left Column) */
+.movie-image {
+    grid-column: 1; /* Occupies the first column */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-image img {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7); /* Aqua glow effect */
+}
+
+.movie-image .rating {
+    margin-top: 10px;
+    background-color: rgba(0, 255, 255, 0.8); /* Aqua background */
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Movie Details (Right Column) */
+.movie-details {
+    grid-column: 2; /* Occupies the second column */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between description and trailer */
+}
+
+.movie-description {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.movie-trailer video {
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7); /* Aqua glow effect */
+}
